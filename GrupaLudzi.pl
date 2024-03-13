@@ -60,13 +60,5 @@ Y = pawel ;
 X = iza,
 Y = piotr ;
 X = jan,
-Y = ola ;
-X = jan,
 Y = piotr ;
-X = piotr,
-Y = jan ;
-X = piotr,
-Y = iza ;
-X = pawel,
-Y = ola ;
 */
