@@ -1,0 +1,33 @@
+----przyklad 2
+fu(a,X,f(g(Y))) = fu(Y,f(z),f(z))
+porownujemy
+Y=a
+
+fu(a,x,f(g(a))) -- fu(a,f(z),f(z))
+x = f(z)
+
+fu(a,f(z),f(g(a))) --- fu(a,f(z),f(z))
+z=g(a)
+
+fu(a,f(g(a)),f(g(a)))=fu(a,f(g(a)),f(g(a))).
+
+pl:
+?- fu(a,X,f(g(y))) = fu(Y,f(Z),f(Z)).
+
+----przyklad 3
+fu(f(x),Y,a)     fu(f(g(Y)),c,Z)
+
+x = g(Y)
+fu(f(g(Y)),Y,a)    fu(f(g(Y)),c,Z)
+
+Y=c
+fu(f(g(c)),c,a)   fu(f(g(c)),c,Z)
+
+Z=a
+
+fu(f(g(c)),c,a)  fu(f(g(c)),c,a)
+
+
+
+
+

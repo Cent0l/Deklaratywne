@@ -1,0 +1,15 @@
+?- trace.
+true.
+
+[trace]  ?- dziadek(X,piotr).
+   Call: (10) dziadek(_17454, piotr) ? creep
+   Call: (11) ojciec(_17454, _18644) ? creep
+   Exit: (11) ojciec(karol, jan) ? creep
+   Call: (11) dziecko(piotr, jan) ? creep
+   Fail: (11) dziecko(piotr, jan) ? creep
+   Redo: (11) ojciec(_17454, _18644) ? creep
+   Exit: (11) ojciec(karol, adam) ? creep
+   Call: (11) dziecko(piotr, adam) ? creep
+   Exit: (11) dziecko(piotr, adam) ? creep
+   Exit: (10) dziadek(karol, piotr) ? creep
+X = karol.

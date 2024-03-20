@@ -1,0 +1,50 @@
+czy c lezy miedzy klockami a i d:
+miedzy(c,a,d).
+miedzy(c,d,a).
+
+czy a lezy miedzy klockami c i d:
+miedzy(a,c,d).
+miedzy(a,d,c).
+
+jaki klocek lezy pomiedzy klockami a i d:
+miedzy(X,a,d).
+
+pomiedzy jakimi klockami lezy klocek c:
+miedzy(c,X,Y).
+
+czy jakis klocek lezy miedzy klockami a i d:
+miedzy(_,a,d).
+
+czy jakis klocek lezy miedzy klockami a i b:
+miedzy(_,a,b).
+
+Zad 2
+Czy piotr lubi wino?
+lubi(piotr,wino).
+
+Co lubi piotr?
+lubi(piotr,X).
+
+Co lubi marta?
+lubi(marta,X).
+
+Czy marta cos lubi?
+lubi(marta,_).
+
+Czy ktos lubi jablka?
+lubi(_,jablka).
+
+Co lubi ania?
+lubi(ania,X).
+
+Kto co lubi?
+lubi(X,Y).
+
+Jakie rzeczy lubia opisane osoby?
+rzecz(X) - X jest rzeczą
+rzecz(wino).
+rzecz(mandarynka).
+rzecz(kwiaty).
+rzecz(banany).
+
+lubi(X,Y),rzecz(Y).

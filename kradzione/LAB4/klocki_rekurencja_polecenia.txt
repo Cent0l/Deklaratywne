@@ -1,0 +1,11 @@
+Czy klocek d lezy na c?
+nad(d,c).
+
+Czy jakis klocek lezy nad a?
+nad(X,a).
+
+Nad jakim klockiem lezy klocek b?
+nad(d,X).
+
+Czy b lezy nad jakims klockiem?
+nad(b,_).

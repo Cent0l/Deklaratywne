@@ -1,0 +1,45 @@
+?- pod(a,c).
+true.
+
+?- pod(d,c).
+false.
+
+?- pod(X,d).
+X = c.
+
+?- pod(a,c).
+true.
+
+?- pod(X,c).
+X = a .
+
+?- pod(a,_).
+true.
+
+?- pod(_,a)/
+|    .
+ERROR: Syntax error: Unbalanced operator
+ERROR: pod(_,a)/
+ERROR: ** here **
+ERROR:  . 
+?- pod(_,a).
+false.
+
+?- pod(_,a).
+false.
+
+?- pod(_,b).
+false.
+
+?- pod(_,d).
+true.
+
+?- czy jakis klocek lezy pod klockjem d.
+ERROR: Syntax error: Operator expected
+ERROR: czy
+ERROR: ** here **
+ERROR:  jakis klocek lezy pod klockjem d . 
+?- pod(a,_).
+true.
+
+?- 
