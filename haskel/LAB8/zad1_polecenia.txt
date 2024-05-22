@@ -1,0 +1,5 @@
+Hugs> kwadrat 3 where kwadrat x= x * x
+9
+Hugs> let kwadrat x=x*x in kwadrat 3
+9
+Hugs> 

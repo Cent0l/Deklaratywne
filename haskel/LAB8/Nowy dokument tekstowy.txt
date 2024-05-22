@@ -1,0 +1,17 @@
+--k(x,y)=x>y
+--pierwszy_wk :: Ord a => a -> a -> Bool
+
+--ff (x,y) = (x-y,x+y)
+para :: Num a => (a,a) -> (a,a)
+para (x,y) = (x-y,x+y)
+
+ob_kuli r = 4 / 3 * pi * r * r * r
+--albo:ob_kuli r = a * pi * sz
+		  where a = 4 / 3
+			sz = r * r * r
+--albo:ob_kuli r = a * pi * ( sz r )
+		   where a = 4 / 3
+			 sz r = r * r * r
+--albo:ob_kuli r = let a = 4 / 3
+		       sz = r * r * r
+		   in a * pi * s
